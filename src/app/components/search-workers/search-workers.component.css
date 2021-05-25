@@ -1,0 +1,202 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.okvir{
+    margin: 20px 20px;
+    background-color: rgba(186, 187, 187, 0.966);
+    border-radius:5px;
+    width: 70%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.pretraga{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.searchDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.search{
+    border-radius:3px;
+    margin:10px;
+    padding:10px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+
+.filter-label{
+    margin-left:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.korisnici{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.example-card {
+    background-color:rgb(221, 224, 224);
+    margin:10px;
+    padding: 10px;
+    width: 280px;
+    box-shadow: 0 5px 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(65, 64, 64, 0.781);
+}
+
+.example-header-image {
+    background-image: url('../../../assets/user.png');
+    background-size: cover;
+  }
+
+ 
+.oglas-buttons{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.oglas-dugme{
+    margin: 10px;
+    display: flex;
+    align-self: end;
+    width: 100px;
+    height: 50px;
+    border-radius: 3px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    cursor: pointer;
+    background-color: rgba(37, 78, 88, 0.966);
+}
+
+.oglas-dugme:hover{
+    background-color: rgba(52, 108, 122, 0.966);
+}
+
+.cancel{
+    cursor: pointer;
+    color:  rgba(37, 78, 88, 0.966);
+    position: absolute;
+    top: 0;
+    right:15px;
+    font-size: 40px;   
+}
+
+.cancel:hover{
+    color:rgba(52, 108, 122, 0.966);
+}
+
+.modalBackground{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(32, 31, 31, 0.5);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.modal{
+    width: 32%;
+    min-height: 300px ;
+    min-width: 200px;
+    padding: 10px;
+    padding-bottom: 13px;
+    border-radius: 4px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: 'Century Gothic';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modalHeader{
+    width: 500px;
+    height:20px;
+    padding: 0px;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    display:flex;
+    flex-direction: row;
+   
+}
+
+.okBtn{
+    margin-top:10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(37, 78, 88, 0.966);
+    color:white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+}
+
+.okBtn:hover{
+    transition-duration: 0.2;
+    background-color: rgba(52, 108, 122, 0.966);
+}
+
+.modalMain{
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detailsLbl{
+    margin:15px;
+    color: rgb(59, 58, 58);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.detailsLblFirst{
+    color:rgba(37, 78, 88, 0.966);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}

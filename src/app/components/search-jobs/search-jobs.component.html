@@ -1,0 +1,29 @@
+<div class="bbody">
+    <div class="ookvir">
+        <div class="pretraga" >
+            <div class="searchDiv">
+                <input type="text" class="search form-control" placeholder="Pretrazite oglase po tipu korisnika koje traže" [(ngModel)]='inputFilter'/>
+                <label class="filter-label"> Filtrirano po: {{ inputFilter }}</label>
+            </div>
+            <div class="korisnici" *ngIf='allEvents && allEvents.length'>
+              <div *ngFor="let event of filteredEvents">
+                <div class="example-card">
+                  <div class="oglas-content">
+                      <div class="oglas-details">
+                          <div>{{event.name}}</div>
+                          <div>{{event.description}}</div>
+                          <div>Potreban tip korisnika: {{event.type}}</div>
+                          <div>Broj potrebnih korisnika: {{event.userCount}}</div>
+                          <div class="oglas-buttons">
+                              <button class="oglas-dugme" mat-button (click)="signToEvent(event);">Prijavi se</button>
+                          </div>
+                      </div>
+                      <div class="oglas-image" ></div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+        </div> 
+        
+    </div>
+</div>

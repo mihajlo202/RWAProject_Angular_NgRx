@@ -1,0 +1,31 @@
+<div class="body">
+    <div class="okvir">
+        <div class="profile-div">
+            <div class="profile-image-div"> </div>
+            <div class="profile-info-div">
+                <label class="lbl-ime">{{user.name}} {{user.surname}}</label>
+                <label class="lbl-mail">{{user.email}}</label>
+                <label class="lbl-mail">{{user.type}}</label>
+                <label class="lbl-mail">Trenutni status: {{user.status}}</label>
+            </div>
+        </div>
+        <div *ngIf='signedEvents && signedEvents.length'>
+            <div *ngFor="let event of signedEvents">
+                <div class="example-card" >
+                    <div class="oglas-content">
+                        <div class="oglas-details">
+                            <div>{{event.name}}</div>
+                            <div>{{event.description}}</div>
+                            <div>Potreban tip korisnika: {{event.type}}</div>
+                            <div>Broj potrebnih korisnika: {{event.userCount}}</div>
+                            <div class="oglas-buttons">
+                                <button class="oglas-dugme" mat-button (click)="signOutOfEvent(event);">Otkaži</button>
+                            </div>
+                        </div>
+                        <div class="oglas-image" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

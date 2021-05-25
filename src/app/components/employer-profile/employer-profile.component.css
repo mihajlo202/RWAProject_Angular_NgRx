@@ -1,0 +1,193 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+
+}
+.okvir{
+    margin: 20px 20px;
+    background-color: rgba(186, 187, 187, 0.966);
+    border-radius:5px;
+    width: 70%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.profile-div{
+    margin:20px 20px 20px 50px;
+    padding:20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-image-div{
+    background-image: url("../../../assets/job3.png");
+    height: 290px;
+    width: 290px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-info-div{
+    width: 60%;
+    padding-bottom: 10px;
+    padding-right:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.create-event-btn{
+    margin-top: 10px;
+    display: flex;
+    align-self: end;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgba(37, 78, 88, 0.966);
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    cursor: pointer;
+}
+
+.create-event-btn:hover{
+    background-color: rgba(52, 108, 122, 0.966);
+    transition-duration: 0.2;
+}
+
+.lbl-ime{
+    color:white;
+    font-size:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lbl-mail{
+    color:rgba(255, 255, 255, 0.644);
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lbl-sertifikat{
+    color:rgba(255, 255, 255, 0.644);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: flex-end;
+    text-align: end;
+}
+
+.example-card {
+    background-color:rgb(221, 224, 224);
+    margin:10px;
+    min-width: 100;
+    min-height: 240px;
+    box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.oglas-content{
+    width: 100%;
+    margin:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.oglas-details{
+    max-width: 50%;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.oglas-image{
+    margin:30px;
+    background-image: url("/../../../assets/job1.jpg");
+    min-height: 240px;
+    width: 50%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-self:center;
+}
+
+.oglas-buttons{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.oglas-dugme{
+    background-color: rgba(37, 78, 88, 0.966);
+}
+
+.oglas-dugme:hover{
+    background-color: rgba(52, 108, 122, 0.966);
+}
+
+.signedUsers{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    margin:5px;
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(182, 182, 182);
+    border-radius: 5px;
+}
+
+.zaposli-dugme{
+    display: flex;
+    align-self: flex-end;
+}
+
+.userLbl{
+    margin:10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+}
+
+.header{
+    height:30px;
+    padding: 0px;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btncancel{
+    display:flex;
+    align-self: end;
+    justify-self: end;
+    cursor: pointer;
+    color: rgb(70, 68, 68);
+    position: relative;
+    top: 0;
+    right:15px;
+    font-size: 40px;  
+}
+
+.btncancel:hover{
+    color:rgb(145, 140, 140);
+}

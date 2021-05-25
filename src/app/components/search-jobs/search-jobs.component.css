@@ -1,0 +1,108 @@
+.bbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+.ookvir{
+    margin: 20px 20px;
+    background-color: rgba(186, 187, 187, 0.966);
+    border-radius:5px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.pretraga{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.searchDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.search{
+    border-radius:3px;
+    margin:10px;
+    padding:10px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+
+.filter-label{
+    margin-left:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.example-card {
+    background-color:rgb(221, 224, 224);
+    margin:10px;
+    padding: 10px;
+    min-width: 100;
+    min-height: 240px;
+    box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(65, 64, 64, 0.781);
+}
+
+.oglas-content{
+    width: 100%;
+    margin:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.oglas-details{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.oglas-image{
+    margin:10px;
+    background-image: url("../../../assets/job1.jpg");
+    min-height: 240px;
+    width: 50%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-self:center;
+}
+
+.oglas-buttons{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.oglas-dugme{
+    margin: 10px;
+    display: flex;
+    align-self: end;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    cursor: pointer;
+    background-color: rgba(37, 78, 88, 0.966);
+}
+
+.oglas-dugme:hover{
+    background-color: rgba(52, 108, 122, 0.966);
+}
+  

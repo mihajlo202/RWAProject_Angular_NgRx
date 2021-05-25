@@ -1,0 +1,56 @@
+<div class="body">
+    <div class="okvir">
+        <div class="pretraga" >
+            <div class="searchDiv">
+                <input type="text" class="search form-control" placeholder="Pretrazite korisnike po imenu, prezimenu i tipu"
+                 [(ngModel)]='inputFilter'/>
+                <label class="filter-label"> Filtrirano po: {{ inputFilter }}</label>
+            </div>
+            <div class="korisnici" *ngIf='usersArray && usersArray.length'>
+              <div *ngFor="let user of filteredUsers">
+                <div class="example-card">
+                  <span (click)="removeUser(user)" class="cancel" >&times;</span>
+                  <div>
+                    <div class="example-header-image"></div>
+                    <div>{{ user.name }} {{ user.surname }}</div>
+                    <div class="tip">{{ user.type }}</div>
+                    <div>Email: {{ user.email }}</div>
+                    <div>Status: {{ user.status }}</div>
+                  </div>
+                  <div>
+                    <button class="oglas-dugme" (click)="detailsClicked(user);" mat-button>DETALJI</button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+        </div> 
+    </div>
+</div>
+
+
+<div *ngIf="showModal" class='modalBackground'>
+  <div class='modal'>
+      <div class="modalHeader">
+          <span (click)="cancelModal();"  class="cancel">&times;</span>
+      </div>
+      <div class="modalMain">
+        <div class="userDetails">
+          <label class="detailsLblFirst detailsLbl">{{specificUser.type}}</label>
+          <label class="detailsLbl">{{specificUser.name}} {{specificUser.surname}}</label>
+          <label class="detailsLbl">Ovog korisnika mozete kontaktirati preko mail-a: {{specificUser.email}}</label>
+          <label class="detailsLbl">Trenutni status zaposlenja: {{specificUser.status}}</label>
+          <label 
+          *ngIf="specificUser.workPlace"
+           class="detailsLbl"> 
+           Trenutno zapošljen na projektu: {{specificUser.workPlace}}
+          </label>
+          <label 
+          *ngIf="!specificUser.workPlace"
+          class="detailsLbl">
+           Trenutno nije zapošljen. 
+          </label>
+        </div>
+          <button class="okBtn" (click)="cancelModal();"  type="button">U redu</button>
+      </div>
+  </div>
+</div> 

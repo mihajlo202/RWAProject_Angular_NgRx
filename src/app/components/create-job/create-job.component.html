@@ -1,0 +1,40 @@
+<div class='modalBackground'>
+    <div class='modal'>
+        <div class="modal-header">
+            <span (click)="cancelModal()" class="cancel">&times;</span>
+        </div>
+        <div class="log-modal-main">
+            <form>
+                <label class="label">Unesite podatke o novom oglasu</label>
+                <div class="form-group">
+                    <label>Unesite naziv oglasa:</label>
+                    <input name="job-name" class="form-control" type="text" [(ngModel)]="job.name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Unesite opis oglasa:</label>
+                    <textarea name="job-description" class="form-control" type="text" rows="5" [(ngModel)]="job.description" required></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label>Unesite tip potrebnih rednika:</label>
+                    <select name="job-tip" class="form-control" type="text" [(ngModel)]="job.type" required>
+                        <option value="Elektricar">Elektricar</option>
+                        <option value="Vodoinstalater">Vodoinstalater</option>
+                        <option value="Keramicar">Keramicar</option>
+                        <option value="Inzinjer">Inzinjer</option>
+                        <option value="Vozac">Vozac</option>
+                        <option value="Ekonomista">Ekonomista</option>
+                        <option value="Prodavac">Prodavac</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>Unesite broj potrebnih radnika:</label>
+                    <input name="job-count" class="form-control" type="number" [(ngModel)]="job.userCount" required>
+                </div>
+                <button class="btn btn-primary" type="button" (click)="handleClick()">Sačuvaj</button>
+            </form>
+        </div>
+    </div>
+</div> 

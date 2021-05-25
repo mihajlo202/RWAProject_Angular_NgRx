@@ -1,0 +1,137 @@
+{
+  "loggedUsers": [
+    {
+      "email": "mihajlo@gmail.com",
+      "password": "mihajlo",
+      "role": "employer",
+      "id": 1
+    },
+    {
+      "email": "stefan@gmail.com",
+      "password": "stefan",
+      "role": "worker",
+      "id": 2
+    },
+    {
+      "email": "uros@gmail.com",
+      "password": "uros",
+      "role": "worker",
+      "id": 3
+    },
+    {
+      "email": "marko@gmail.com",
+      "password": "marko",
+      "role": "worker",
+      "id": 4
+    },
+    {
+      "email": "predrag@gmail.com",
+      "password": "predrag",
+      "role": "employer",
+      "id": 5
+    },
+    {
+      "email": "goran@gmail.com",
+      "password": "goran",
+      "role": "worker",
+      "id": 6
+    },
+    {
+      "email": "janko@gmail.com",
+      "password": "janko",
+      "role": "worker",
+      "id": 7
+    }
+  ],
+  "employer": [
+    {
+      "name": "Mihajlo",
+      "surname": "Sutanovac",
+      "email": "mihajlo@gmail.com",
+      "company": "SCH doo",
+      "id": 1
+    },
+    {
+      "name": "Predrag",
+      "surname": "Cakic",
+      "email": "predrag@gmail.com",
+      "company": "CAKI doo",
+      "id": 2
+    }
+  ],
+  "worker": [
+    {
+      "name": "Stefan",
+      "surname": "Stamenkovic",
+      "email": "stefan@gmail.com",
+      "type": "Elektricar",
+      "status": "u procesu",
+      "id": 1
+    },
+    {
+      "name": "Uroš",
+      "surname": "Perić",
+      "email": "uros@gmail.com",
+      "type": "Keramicar",
+      "status": "u procesu",
+      "id": 2
+    },
+    {
+      "name": "Marko",
+      "surname": "Savić",
+      "email": "marko@gmail.com",
+      "type": "Prodavac",
+      "status": "u procesu",
+      "id": 3
+    },
+    {
+      "name": "Goran",
+      "surname": "Cvetanovic",
+      "email": "goran@gmail.com",
+      "type": "Vozac",
+      "status": 0,
+      "id": 4
+    },
+    {
+      "name": "Janko",
+      "surname": "Jankovic",
+      "email": "janko@gmail.com",
+      "type": "Vozac",
+      "status": 0,
+      "id": 5
+    }
+  ],
+  "job": [
+    {
+      "name": "Oglas1",
+      "description": "opis oglasa 1",
+      "type": "Elektricar",
+      "userCount": 3,
+      "employerId": 1,
+      "id": 1
+    },
+    {
+      "name": "oglas2",
+      "description": "opis oglasa 2",
+      "type": "Keramicar",
+      "userCount": 1,
+      "employerId": 1,
+      "id": 2
+    },
+    {
+      "name": "oglas3",
+      "description": "oglas 3",
+      "type": "Keramicar",
+      "userCount": 3,
+      "employerId": 1,
+      "id": 3
+    }
+  ],
+  "jobSignedUp": [
+    {
+      "jobId": 1,
+      "workerId": 1,
+      "id": 1
+    }
+  ]
+}

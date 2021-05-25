@@ -1,0 +1,39 @@
+<div class="body">
+    <div class="okvir">
+        <div class="profile-div">
+            <div class="profile-image-div"> </div>
+            <div class="profile-info-div">
+                <label class="lbl-ime">{{employer.name}} {{employer.surname}}</label>
+                <label class="lbl-mail">{{employer.email}}</label>
+                <label class="lbl-sertifikat">{{employer.company}}</label>
+                <button class="create-event-btn" (click)="createNewJobClicked();">Novi posao</button>
+            </div>
+        </div>
+        <div *ngFor="let event of allEvents" class="example-card">
+            <div class="oglas-content">
+                <div class="oglas-details">
+                    <div>{{event.name}}</div>
+                    <div>{{event.description}}</div>
+                    <div>Potreban tip korisnika: {{event.type}}</div>
+                    <div>Broj potrebnih korisnika: {{event.userCount}}</div>
+                    <div class="oglas-buttons">
+                        <button class="oglas-dugme btn btn-secondary"  (click)="onUpdateClick(event);">Izmeni</button>
+                        <button class="oglas-dugme btn btn-secondary"  (click)="showSignedWorkers(event);" >Lista prijavljenih korisnika</button>
+                        <button class="oglas-dugme btn btn-secondary"  (click)="onDeleteClick(event);">Obriši</button>
+                    </div>
+                </div>
+                <div class="oglas-image" ></div>
+            </div>
+            <div class="signedUsers" *ngIf="event.id===idEvent">
+                <div class="header" *ngIf="signedUsers && signedUsers.length">
+                    <span class="btncancel" (click)="closeSignedUsers();">&times;</span>
+                </div>
+                <div *ngFor="let user of signedUsers" class="user">
+                    <label class="userLbl"><b>{{user.name}} {{user.surname}}</b>, Email: <b>{{user.email}}</b></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-create-job *ngIf="displayEventModal" [isUpdating]="isUpdating" (cancelClicked)='hideJobModal()'></app-create-job>
